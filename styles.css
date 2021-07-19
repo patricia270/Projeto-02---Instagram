@@ -1,64 +1,516 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #262626;
+    background-color: #FAFAFA; 
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
 
 body * {
     box-sizing: border-box;
 }
 
-.site {
-    width: 100%;
-    height: 100%;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.topo {
-    height: 56px;
+ion-icon {
+    height: 22px;
+    width: 22px;
+    pointer-events: none;
+ }
+
+ .topo {
     width: 100vw;
+    height: 54px;
     border-bottom: 1px solid #DBDBDB;
-    background-color: yellow;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    background-color: #FFFFFF;
+    z-index: 100;
+ }
+
+ .limite {
+    width: 935px;
+    margin: 0 auto;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+ }
+
+ .logo-instagram {
+    width: 103px;
+    height: 29px;
+    margin-left: 10px;
+}
+
+.icone-instagram {
+    border-right: 1px solid #DBDBDB;
+    padding-right: 10px;
+}
+
+.icone-e-logo-instagram {
+    display: flex;
+    position:absolute;
+}
+.caixa-de-pesquisa {
+    width: 215px;
+    height: 28px;
+    border-radius: 4px;
+    border : 1px solid #DBDBDB;
+    text-align: center;
+    padding-top: 5px;  
+    background-color: #FAFAFA;
+    position:absolute;
+    left: 38%;
+
+} 
+
+.icones-do-canto-direito {
+    position:absolute;
+    right: 0%;
+}
+
+.icones-do-canto-direito ion-icon {
+    margin-left: 18px;
+}
+
+.container {
+    width: 935px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 54px;
+    background-color: #FAFAFA;
+  
+}
+
+.conteudo-base {
+    width: 614px;
+    height: 100%;
+    margin-top: 34px;
 }
 
 .barra-de-stories {
-    width: 100%;
-    height: 121px;
-    border-bottom:  1px solid #DBDBDB;
-    background-color: blueviolet;
-    margin-bottom: 10px;
-
-
-
+    width: 614px;
+    height: 118px;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: clip;
 }
 
-.barra-de-stories > .moldura {
+.barra-de-stories div {
+    margin-left: 6.75px;
+}
+
+.imagens-do-storie { 
     width: 66px;
     height: 66px;
-   
-
+    position: relative;
 }
 
-.barra-de-stories > .logos {
+.barra-de-stories p {
+    max-width: 78px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.moldura {
+    width: 66px;
+    height: 66px;
+}
+
+.imagem-de-perfil {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-
+    position: absolute;
+    left: 5px;
+    top: 5px;   
 }
 
-.conteúdo {
-    height: 900px;
-    width: 100%;
-    background-color: red;
+.setinha {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    margin-left: 577px;
+    color: #FFFFFF;
+    filter:drop-shadow(0 0 2px #DBDBDB);
 }
 
 .post {
-    width: 100%;
-    height: 749px;
-    background-color: yellowgreen;
+    width: 614px;
+    height: auto;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    margin-bottom: 60px;
+    background-color: #FFFFFF;
 }
 
-.cabeçalho-do-post {
-    width: 100%;
+.post p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.topo-do-post {
+    width: 614px;
     height: 60px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-div > img {
-    width: 100%;
-    height: 614px;
+.logo-e-nome {
+    display: flex;
+    align-items: center;
 }
+
+.logo-e-nome img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 17px;
+    margin-right: 15px;
+
+}
+
+.tres-pontinhos {
+    width: 16px;
+    height: 16px;
+    margin-right: 17px;
+}
+
+.imagem-principal {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+.caixa-de-reacoes-ao-post {
+    width: 614px;
+    height: 76px;
+}
+
+.opcoes-de-reacao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.opcoes-de-reacao > div {
+    margin-left: 15px; 
+}
+
+.icones-proximos ion-icon {
+    margin-right: 5px;
+}
+
+.marcador-salvar {
+    margin-right: 10px;
+}
+
+.total-de-curtidas {
+    padding-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.curtiu {
+    position: absolute;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.curtidas {
+  position: absolute;
+  left: 40px;
+  top: 6px;
+}
+
+.sidebar {
+    width: 335px;
+    height: 100%;
+    padding-left: 28px;
+    position: fixed;
+    left: calc(50% + 146px);
+   
+}
+
+.conteudo-da-sidebar {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.catanacomics {
+    width: 100%;
+    height: 56px;
+    margin-top: 55px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.imagem-catana {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.catanacomics > div {
+    margin-left: 17px;
+}
+
+.caixa-de-sugestoes {
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+
+} 
+
+.titulo-das-sugestoes {
+    color: #8E8E8E;
+    font-size: 12px;
+}
+
+.sugestoes > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+.opcao-e-info {
+    width: 100%;
+    margin-right: 54px;
+    display: flex;
+}
+
+.nome-e-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.primeira-caixa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vertudo {
+    margin-left: 90px;
+    font-size: #262626;
+
+}
+
+.sugestoes {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.imagem-perfil-das-sugestoes {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+} 
+
+.nome-e-info {
+    margin-left: 11px;
+}
+
+.seguir {
+    color: #139EF2
+}
+
+.info-da-sugestao {
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.texto-final-da-sidebar {
+    margin-top: 20px;
+    line-height: 12px;
+    font-size: 11px;
+    letter-spacing: -0.20px;
+    color: #C7C7C7
+}
+
+.texto-final-da-sidebar p {
+    margin-bottom: 5px;
+}
+
+.barra-inferior {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 54px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    display: none;
+    box-sizing: border-box;
+}
+
+
+.botoes-barra-inferior{
+    display: flex;
+    margin-left: 15px;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+@media (max-width: 935px) {
+    .topo {
+        width: 100vw;
+    }
+
+    .limite {
+        width: 100vw;
+    }
+
+    .icone-instagram {
+        padding-left: 5px;
+    }
+
+    .perfil {
+        padding-right: 5px;
+    }
+
+    .barra-de-stories {
+        margin-top: 34px;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    .conteudo-base {
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 100vw;
+    }
+}
+
+
+
+
+@media (max-width: 614px) {
+    .container {
+        width: 100%;
+    }
+    .body {
+        width: 100%;
+    }
+
+    .topo {
+        width: 100vw;
+    }
+    .conteudo-base {
+        width: 100%;
+    }
+
+    .icone-e-logo-instagram {
+       background-color: aqua;
+       width: 57.5%;
+       justify-content: space-between;
+    }
+
+    .icone-instagram {
+        padding-left: 20px;
+    }
+    .barra-de-stories {
+        width: 100%;
+    }
+
+    .direct {
+        padding-right: 20px;
+    }
+    .caixa-de-pesquisa, .explorer, .heart, .perfil {
+        display: none;
+    }
+
+    .barra-de-stories {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border: none;
+        width: 100%;
+       
+
+    }
+
+    .post {
+        width: 100%;
+    }
+
+    .topo-do-post {
+        width: 100%;
+
+       
+    }
+
+    .opcoes-de-reacao {
+        width: 100%;
+        
+    }
+
+    .caixa-de-reacoes-ao-post {
+        width: 100%;
+       
+    }
+
+    .total-de-curtidas {
+        width: 100%;
+    }
+
+    .logo-e-nome {
+        width: 100%;
+    }
+
+    .barra-inferior {
+        display: flex;
+    }
+
+    .post div {
+        width: 100%;
+    }
+
+    .conteudo-da-sidebar {
+        display: none;
+    }
+   
+
+}
+   
