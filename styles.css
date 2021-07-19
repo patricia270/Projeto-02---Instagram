@@ -425,8 +425,6 @@ video {
 }
 
 
-
-
 @media (max-width: 614px) {
     .container {
         width: 100%;
@@ -443,7 +441,6 @@ video {
     }
 
     .icone-e-logo-instagram {
-       background-color: aqua;
        width: 57.5%;
        justify-content: space-between;
     }
